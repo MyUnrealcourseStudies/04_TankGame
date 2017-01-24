@@ -23,4 +23,8 @@ public:
 	virtual void Tick( float DeltaTime ) override;
 	
 	void AimTowardsCrosshair();
+
+	// Return an OUT parameter, true if hit landscape
+	bool GetSightRayHitLocation(FVector& HitLocation) const;
+
 };
